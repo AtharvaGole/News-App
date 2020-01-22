@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<body>
+
+		<div id="google_translate_element"></div>
+
+		<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+		}
+		</script>
+
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+		<h1 id="title">Boult vs Rohit will be fascinating in NZ - Hesson</h1>
+		
+		<p id="description">
+			If it swings, yes. Rohit just has to play close to the body in the first session and not go hard at the ball. If he does that, he will enjoy the batting conditions in New Zealand. 
+		</p>
+
+		<br>
+
+
+	    <button id='btnSpeak'>Speak!</button>
+
+	    <script>
+
+	    	function isEnglish() {
+
+	    		if(document.documentElement.lang === "en") {
+	    			return true;
+	    		}
+
+	    		return false;
+
+	    	}
+
+
+	    	function getText() {
+
+				var title = document.getElementById("title").innerHTML;
+				var description = document.getElementById("description").innerHTML;
+
+				return title+" "+description;
+
+			}
+
+
+	        var btnSpeak = document.querySelector('#btnSpeak');
+	        var synth = window.speechSynthesis;
+
+	        btnSpeak.addEventListener('click', ()=> {
+
+	        	if(!isEnglish()) {
+	        		alert("First Select English!!!");
+	        		return;
+	        	}
+
+	            var toSpeak = new SpeechSynthesisUtterance(getText());
+	            synth.speak(toSpeak);
+	        });
+
+	    </script>
+
+
+	</body>
+
+</html>
+
