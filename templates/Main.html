@@ -57,10 +57,10 @@
 
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">News Heading</h1>
-
+          <h1 class="display-4 font-italic">{{title}}</h1>
+          <!--
           <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-         
+          -->
         </div>
       </div>
 
@@ -71,13 +71,20 @@
         <div class="col-md-8 blog-main">
           
           <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
-            <p class="blog-post-meta">January 1, 2020 by <a href="#">Sangram</a></p>
+            <h2 class="blog-post-title">{{source}}</h2>
+            <p class="blog-post-meta">{{publishedAt}}<a href="#">{{author}}</a></p>
 
+            <img src={{urlToImage}}>
+
+            <p>
+              {{description}}
+            </p>
+
+            <!--
             <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
             <hr>
             <p>Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation</p>
-
+            -->
             
           </div><!-- /.blog-post -->
 
