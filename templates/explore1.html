@@ -44,19 +44,9 @@
             <a class="blog-header-logo text-dark" href="#">Logo</a>
           </div>
           <div>
-          	<select id="country_drop_down" onchange="load_country()">
-          		{% for code in country_codes %}
-          			{% if code == country %}
-				        <option value={{code}} selected>{{code}}</option>
-				    {% else %}
-				        <option value={{code}}>{{code}}</option>
-				    {% endif %}
-          		{% endfor %}
+          	<select id="country_drop_down">
+          		<script type="text/javascript">get_country_drop_down()</script>
           	</select>
-          </div>
-          <div>
-          	<input type="text" id="search_articles">
-          	<button onclick="search_articles()">search</button>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#">

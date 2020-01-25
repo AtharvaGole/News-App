@@ -55,10 +55,12 @@
         </nav>
       </div>
 
-      <div class="jumbotron p-3 p-md-5 text-white" style="background-image: url({{urlToImage}});>
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">{{title}}</h1>
-          
+          <!--
+          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+          -->
         </div>
       </div>
 
@@ -70,8 +72,9 @@
           
           <div class="blog-post">
             <h2 class="blog-post-title">{{source}}</h2>
-            <p class="blog-post-meta">{{publishedAt}} <a href="#">{{author}}</a></p>
-            <hr>            
+            <p class="blog-post-meta">{{publishedAt}}<a href="#">{{author}}</a></p>
+
+            <img src={{urlToImage}}>
 
             <p>
               {{description}}
@@ -110,22 +113,18 @@
       </div><!-- /.row -->
 
     </main><!-- /.container -->
-<br>
-<br>
 
-    <footer class="blog-footer text-center" style="background-color: #f8f9fa;padding: 10px;">
+    <footer class="blog-footer">
       <p>Add footer here or commom</p>
-      
+      <p>
         <a href="#">Back to top</a>
-     
+      </p>
     </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    	
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
