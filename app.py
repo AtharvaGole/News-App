@@ -15,6 +15,9 @@ country_codes = ['ae', 'ar', 'at', 'au', 'be', 'bg', 'br', 'ca', 'ch', 'cn', 'co
 def index():
 	return render_template(".html")
 
+@app.route("/login")
+def login():
+	return render_template("login.html")
 
 @app.route("/article")
 def article():

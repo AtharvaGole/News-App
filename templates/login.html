@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link href="../static/style/login.css" rel="stylesheet"/>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/login.css') }}">
         <script src="../static/js/jquery-1.10.2.min.js"></script>
         <script src="../static/js/login.js"></script>
     </head>
@@ -23,7 +23,6 @@
                     <input  name="u_id" type="text" placeholder="User Name"/><br>
                     <input name="password" type="password" placeholder="Password"/><br>
                     <input  name="mobile" type="text" placeholder="Mobile"/><br>
-                    <input name="salary" type="number" placeholder="Salary"/><br>
                     <button name="signup" value="signup">SIGN UP</button>
                 </form>
             </div>
