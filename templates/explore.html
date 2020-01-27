@@ -33,13 +33,13 @@
     <script type="text/javascript">set_parameters('{{category}}','{{country}}')</script>
   </head>
 
-  <body>
+  <body style="background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;">
     <div class="container">
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           
           <div class="col-2 d-flex justify-content-end  align-items-center">
-            <a class="blog-header-logo text-dark" href="#">Logo</a>
+            <a class="blog-header-logo" href="#" style="color: white;"> Logo</a>
           </div>
            <div class="col-4">
             
@@ -49,11 +49,11 @@
           	<input type="text" id="search_articles">
           	
           	<a class="text-muted" href="#" onclick="search_articles()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
             </a>
 
-            
-          	Country 
+            <div style="color: white;font-size: 18px;">
+            	Country 
           	<select id="country_drop_down" onchange="load_country()">
           		{% for code in country_codes %}
           			{% if code == country %}
@@ -63,28 +63,29 @@
 				    {% endif %}
           		{% endfor %}
           	</select>
+            </div>
+          	
       
 
           </div>
           <div  class="col-1 d-flex justify-content-end align-items-center">
-            <a class="btn btn-sm btn-outline-secondary" href="http://127.0.0.1:5000/login">Sign up</a>
+            <a class="btn btn-sm" style="color: white;background-color: #000804" href="http://127.0.0.1:5000/login">Sign up</a>
           </div>
         </div>
       </header>
-
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
+<br>
+      <div class="nav-scroller py-1 mb-2" style="line-height: 1; border-bottom: 1px solid #e5e5e5;">
+        <nav class="nav d-flex justify-content-between" >
         	
-	      	<a class="pointer" href="http://127.0.0.1:5000/explore" class="p-2 text-muted">Home</a>
-	      	<a class="pointer" href="#" class="p-2 text-muted" onclick="load_category('business')">Business</a>
-	      	<a class="pointer" href="#" class="p-2 text-muted" onclick="load_category('entertainment')">Entertainment</a>
-	      	<a class="pointer" href="#" class="p-2 text-muted" onclick="load_category('health')">Health</a>
-	      	<a class="pointer" href="#" class="p-2 text-muted" onclick="load_category('science')">Science</a>
-	      	<a class="pointer" href="#" class="p-2 text-muted" onclick="load_category('sports')">Sports</a>
-	      	<a class="pointer" href="#" class="p-2 text-muted" onclick="load_category('technology')">Technology</a>
+	      	<a style="color: white" class="pointer" href="http://127.0.0.1:5000/explore" class="p-2 text-muted">Home</a>
+	      	<a style="color: white" class="pointer" href="#" class="p-2 text-muted" onclick="load_category('business')">Business</a>
+	      	<a style="color: white" class="pointer" href="#" class="p-2 text-muted" onclick="load_category('entertainment')">Entertainment</a>
+	      	<a style="color: white" class="pointer" href="#" class="p-2 text-muted" onclick="load_category('health')">Health</a>
+	      	<a style="color: white" class="pointer" href="#" class="p-2 text-muted" onclick="load_category('science')">Science</a>
+	      	<a style="color: white" class="pointer" href="#" class="p-2 text-muted" onclick="load_category('sports')">Sports</a>
+	      	<a style="color: white" class="pointer" href="#" class="p-2 text-muted" onclick="load_category('technology')">Technology</a>
         </nav>
       </div>
-
 
   <div>
   	<!--Carousel Wrapper-->
@@ -179,8 +180,8 @@
 			
           </div><!-- /.blog-post -->
 
-          <div>
-          	<button id="load_more" onclick="load_more()">Load More</button>
+          <div class="text-center" style="">
+          	<button id="load_more" class="btn btn-primary" onclick="load_more()">Load More</button>
           </div>
 
 
@@ -259,7 +260,7 @@
 
 <br>
 <br>
-      <footer class="blog-footer text-center" style="background-color: #f8f9fa;padding: 10px;">
+      <footer class="blog-footer " style="background-color: #f8f9fa;padding: 10px;">
       <p>Add footer here or commom</p>
       <p>
         <a href="#">Back to top</a>
