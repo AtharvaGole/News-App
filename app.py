@@ -13,7 +13,7 @@ country_codes = ['ae', 'ar', 'at', 'au', 'be', 'bg', 'br', 'ca', 'ch', 'cn', 'co
 
 @app.route("/")
 def index():
-	return render_template(".html")
+	return render_template("login.html")
 
 @app.route("/rss")
 def rss():
